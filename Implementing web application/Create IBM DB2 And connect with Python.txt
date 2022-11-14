@@ -1,0 +1,433 @@
+                                     NEWS TRACKER APPLICATION
+                                     PNT2022TMID50490
+                              
+                            Create IBM DB2 and connect with python
+                                
+                                
+                                     Login.html
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-image: linear-gradient(92.7deg, rgb(243, 178, 178) 8.5%, rgb(246, 244, 198) 90.2%);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    button:hover {
+        background-color: dark blue;
+        border-color: black;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: purple;
+        top: 10em;
+    }
+
+    .container1 {
+        border: 2px solid black;
+        border-color: black;
+        border-radius: 10px;
+        width: 400px;
+    }
+
+    .top {
+        margin-top: 100px;
+    }
+
+    input:hover {
+        border-color: rgb(25, 20, 20);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #006600;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: rgb(215, 117, 92);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(128, 105, 255);
+        text-decoration: none;
+    }
+
+    a:active {
+        color: rgb(202, 99, 75);
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <center>
+        <h1 class="top">IBM</h1>
+        <div class="container1">
+            <br>
+            <h1>LOGIN</h1>
+            <form action="http://localhost:5000/login" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="text">USERNAME</label></td>
+                        <td><input type="text" name="username" placeholder="enter user name" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="text">PASSWORD</label></td>
+                        <td><input type="text" name="password" placeholder="enter valid password"></td>
+                    </tr>
+                </table>
+                <br>
+                <button type="submit">SUMBIT</button>
+            </form>
+            <br>
+        </div>
+        <br>
+        <label for="text">New User!! <br> <br> <b><a href="http://http://localhost:5000">SIGN UP</a></b></label>
+    </center>
+</body>
+
+</html>
+
+
+
+
+                                         Register.html
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION PAGE</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(92.7deg, rgb(59, 170, 201) 8.5%, rgb(246, 244, 198) 90.2%);
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    input:hover {
+        border-color: rgb(25, 20, 20);
+    }
+
+    button:hover {
+        background-color: dark blue;
+        border-color: black;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: darkolivegreen;
+    }
+
+    #qwerty {
+        margin-top: 15em;
+    }
+</style>
+
+<body>
+    <center id="qwerty">
+        <H1>REGISTRATION FORM</H1>
+        <!--  -->
+        <form action="http://localhost:5000/register" method="POST">
+            <table>
+                <tr>
+                    <td><label for="text">USERNAME</label></td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" placeholder="Enter Username" name="username" id="username"></td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="text">EMAIL ID</label></td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" placeholder="Enter email id" name="email_id" id="email_id"></td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="text">PHONE NUMBER</label></td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" placeholder="Enter phone number" name="phone_no" id="phone_no"></td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="text">PASSWORD</label></td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" placeholder="Enter password" name="password" id="password"></td>
+                </tr>
+
+                <tr></tr>
+                <tr></tr>
+            </table>
+            <br>
+            <center><button onclick="asd()" type="submit">Submit</button>
+            </center>
+        </form>
+    </center>
+</body>
+<script>
+    function asd() {
+        var username1 = document.getElementById("username");
+        var email_id = document.getElementById('email_id');
+        var phone_no = document.getElementById('phone_no');
+        var password = document.getElementById('password');
+        if (username1.value == "" || phone_no.value == "" || password.value == "") {
+            username.style.borderColor = "red";
+        }
+        else if (email_id.value == "") {
+            email_id.style.borderColor = "red";
+        }
+        else if (phone_no.value == "") {
+            phone_no.style.borderColor = "red";
+        }
+        else if (phone_no.value == "") {
+            password.style.borderColor = "red";
+        }
+
+
+    }
+
+
+</script>
+
+</html> 
+
+
+
+
+
+
+                                          Welcome.html
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>WELCOME</title>
+</head>
+<style>
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: darkolivegreen;
+        top: 10em;
+    }
+
+    body {
+        background-image: linear-gradient(92.7deg, rgb(59, 170, 201) 8.5%, rgb(246, 244, 198) 90.2%);
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+
+
+    a:hover {
+        color: rgb(128, 105, 255);
+        text-decoration: none;
+    }
+
+    .font {
+        color: rgb(141, 18, 100);
+        font: bold;
+        font-size: 27px;
+    }
+
+
+    #top {
+        margin-top: 200px;
+    }
+</style>
+
+<body>
+    <center>
+        <H1 id="top">LOGIN SUCCESSFUL</H1>
+        <table>
+            <tr class="font">
+                <td>WELCOME</td>
+                <td>&nbsp;</td>
+                <td>{{username}}</td>
+            </tr>
+            <!-- <tr class="font">
+                <td>EMAIL_ID</td>
+                <td>&nbsp;</td>
+                <td>{{email_id}}</td>
+            </tr>
+            <tr class="font">
+                <td>PHONE NO</td>
+                <td>&nbsp;</td>
+                <td>{{phone_no}}</td> -->
+            <!-- </tr> -->
+        </table>
+        <table>
+            <tr>
+                <h1>CONNECT TO</h1>
+            </tr>
+            <tr>
+                <td>
+                    <label"><a href="https://in.linkedin.com/company/ibm"><i class="fa fa-linkedin-square"
+                                style="font-size:36px"></i></a></label>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/ibm/?hl=en"><i class="fa fa-instagram"
+                            style="font-size:36px"></i></a></td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.facebook.com/IBM/"><i class="fa fa-facebook" style="font-size:36px"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://twitter.com/ibm?lang=en"><i class="fa fa-twitter" style="font-size:36px"></i></a>
+                </td>
+            </tr>
+        </table>
+
+        </table>
+    </center>
+
+
+</body>
+
+</html>
+
+
+                                       
+                      
+
+                                        App Coding
+
+
+from flask import Flask, render_template, request, redirect, url_for, session
+import ibm_db
+import re
+
+app = Flask(__name__)
+
+hostname = '19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud'
+uid = 'sfr69790'
+pwd = 'VFRS0bFKFeIhMbcq'
+driver = "{IBM DB2 ODBC DRIVER}"
+db_name = 'Bludb'
+port = '30699'
+protocol = 'TCPIP'
+cert = "C:/Users/Prithiarun/Desktop/IBM/TEST/certi.crt"
+dsn = (
+    "DATABASE ={0};"
+    "HOSTNAME ={1};"
+    "PORT ={2};"
+    "UID ={3};"
+    "SECURITY=SSL;"
+    "PROTOCOL={4};"
+    "PWD ={6};"
+).format(db_name, hostname, port, uid, protocol, cert, pwd)
+connection = ibm_db.connect(dsn, "", "")
+print()
+# query = "SELECT username FROM USER1 WHERE username=?"
+# stmt = ibm_db.prepare(connection, query)
+# ibm_db.bind_param(stmt, 1, username)
+# ibm_db.execute(stmt)
+# username = ibm_db.fetch_assoc(stmt)
+# print(username)
+app.secret_key = 'a'
+
+
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    msg = " "
+    if request.method == 'POST':
+        username = request.form['username']
+        email_id = request.form['email_id']
+        phone_no = request.form['phone_no']
+        password = request.form['password']
+        query = "SELECT * FROM USER1 WHERE username=?;"
+        stmt = ibm_db.prepare(connection, query)
+        ibm_db.bind_param(stmt, 1, username)
+        ibm_db.execute(stmt)
+        account = ibm_db.fetch_assoc(stmt)
+        if (account):
+
+            msg = "Account already exists!"
+            return render_template('register.html', msg=msg)
+        # elif not re.match(r'[^@]+@[^@]+\.[^@]+', email_id):
+        #     msg = "Invalid email addres"
+        # elif not re.match(r'[A-Za-z0-9+', username):
+        #     msg = "Name must contain only characters and numbers"
+        else:
+            query = "INSERT INTO USER1 values(?,?,?,?)"
+            stmt = ibm_db.prepare(connection, query)
+            ibm_db.bind_param(stmt, 1, username)
+            ibm_db.bind_param(stmt, 2, email_id)
+            ibm_db.bind_param(stmt, 3, phone_no)
+            ibm_db.bind_param(stmt, 4, password)
+            ibm_db.execute(stmt)
+            msg = 'You have successfully Logged In!!'
+            return render_template('login.html', msg=msg)
+    else:
+        msg = 'PLEASE FILL OUT OF THE FORM'
+        return render_template('register.html', msg=msg)
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    global userid
+    msg = ' '
+    if request.method == "POST":
+        username = request.form['username']
+        password = request.form['password']
+        query = "select * from user1 where username=? and password=?"
+        stmt = ibm_db.prepare(connection, query)
+        ibm_db.bind_param(stmt, 1, username)
+        ibm_db.bind_param(stmt, 2, password)
+        ibm_db.execute(stmt)
+        account = ibm_db.fetch_assoc(stmt)
+        print(account)
+        if account:
+            session['Loggedin'] = True
+            session['id'] = account['USERNAME']
+            session['username'] = account['USERNAME']
+            msg = 'Logged in Successfully'
+            return render_template('welcome.html', msg=msg, username=str.upper(username))
+        else:
+            msg = 'Incorrect Username or Password'
+            return render_template('login.html', msg=msg)
+    else:
+        msg = 'PLEASE FILL OUT OF THE FORM'
+        return render_template('login.html', msg=msg)
+
+
+@app.route('/welcome', methods=['GET', 'POST'])
+def welcome():
+    if request.method == 'POST':
+        username = request.form['username']
+        print(username)
+        return render_template('welcome.html', username=username)
+    else:
+        return render_template('welcome.html', username=username)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+    app.run(host='0.0.0.0')
